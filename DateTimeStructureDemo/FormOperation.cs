@@ -19,49 +19,65 @@ namespace DateTimeStructureDemo
 
         private void buttonGetCurrentDateAndTime_Click(object sender, EventArgs e)
         {
-           
+            DateTime currentDateTime = DateTime.Now;
+            textBoxCurrentDateTime.Text = currentDateTime.ToString();
         }
 
         private void buttonAddDays_Click(object sender, EventArgs e)
         {
-            
+            DateTime currentDateTime = DateTime.Now;
+            currentDateTime = currentDateTime.AddDays(2);
+            textBoxAddDays.Text = currentDateTime.ToString();
         }
 
         private void buttonAddMonths_Click(object sender, EventArgs e)
         {
 
-            
+            DateTime currentDateTime = DateTime.Now;
+            currentDateTime = currentDateTime.AddMonths(1);
+            textBoxAddMonths.Text = currentDateTime.ToString();
 
         }
 
         private void buttonAddYears_Click(object sender, EventArgs e)
         {
-           
 
+            DateTime currentDateTime = DateTime.Now;
+            currentDateTime = currentDateTime.AddYears(3);
+            textBoxAddYears.Text = currentDateTime.ToString();
 
         }
 
         private void buttonAddHours_Click(object sender, EventArgs e)
         {
-            
+            DateTime currentDateTime = DateTime.Now;
+            currentDateTime = currentDateTime.AddHours(3);
+
+            textBoxAddHours.Text = currentDateTime.ToString();
 
         }
 
         private void buttonAddMinutes_Click(object sender, EventArgs e)
         {
-           
+            DateTime currentDateTime = DateTime.Now;
+            currentDateTime = currentDateTime.AddMinutes(30);
+
+            textBoxAddMinutes.Text = currentDateTime.ToString();
 
         }
 
         private void buttonAddSeconds_Click(object sender, EventArgs e)
         {
-           
+            DateTime currentDateTime = DateTime.Now;
+            currentDateTime = currentDateTime.AddSeconds(120);
+
+            textBoxAddSeconds.Text = currentDateTime.ToString();
 
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
         }
     }
 }
