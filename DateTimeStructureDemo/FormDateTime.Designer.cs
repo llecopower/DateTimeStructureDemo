@@ -68,6 +68,7 @@
             this.textBoxDayOfYear = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBoxTimeOfDay = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -507,11 +508,21 @@
             this.textBoxTimeOfDay.Size = new System.Drawing.Size(168, 22);
             this.textBoxTimeOfDay.TabIndex = 29;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(51, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormDateTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 615);
+            this.ClientSize = new System.Drawing.Size(1343, 682);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxTimeOfDay);
             this.Controls.Add(this.label12);
@@ -593,8 +604,7 @@
         private System.Windows.Forms.TextBox textBoxDayOfYear;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBoxTimeOfDay;
-
-       
+        private System.Windows.Forms.Button button1;
     }
 }
 
